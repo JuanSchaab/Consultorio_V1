@@ -8,7 +8,14 @@
             <head>
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link href="{{ asset('css/turnos.css')}}" rel="stylesheet" > 
+            <link href="{{ asset('css/calendar.css')}}" rel="stylesheet" >  
             <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
             </head>
             <body>
             
@@ -73,9 +80,10 @@
                 <br>
                 <br>
                 <br>
+                <br><br><br><br><br><br>
                 <h2>Reserva de Turnos</h2>
                 
-                <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" >Turnos</button>
+                <button onclick="document.getElementById('id02').style.display='block'" style="width:auto; position:relative" >Turnos</button>
             
                 <div id="id02" class="modal">
                   
@@ -136,10 +144,53 @@
                                             <h2 class="step__title">Elija un día<small>(Paso 2)</small></h2>
                                         </div>
                                         <div class="step__body">
-                                            <input type="text" placeholder="Nombre" class="step__input">
-                                            <input type="text" placeholder="Apellido" class="step__input">
-                                            <input type="tel" placeholder="Teléfono" class="step__input">
-                                            <textarea rows="4" cols="80" placeholder="Dirección" class="step__input"></textarea>
+                                            <div class="container-fluid px-0 px-sm-4 mx-auto">
+                                                <div class="row justify-content-center mx-0">
+                                                  <div class="col-lg-10">
+                                                    <div class="card border-0">
+                                                      <form autocomplete="off">
+                                                        <div class="card-header bg-dark">
+                                                          <div class="mx-0 mb-0 row justify-content-sm-center justify-content-start px-1">
+                                                            <input type="text" id="dp1" class="datepicker" placeholder="Pick Date" name="date" readonly><span class="fa fa-calendar"></span>
+                                                          </div>
+                                                        </div>
+                                                        <div class="card-body p-3 p-sm-5">
+                                                          <div class="row text-center mx-0">
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">9:00AM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">9:30AM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">9:45AM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">10:00AM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">10:30AM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">10:45AM</div></div>
+                                                          </div>
+                                                          <div class="row text-center mx-0">
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">11:00AM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">11:30AM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">11:45AM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">12:00PM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">12:30PM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">12:45PM</div></div>
+                                                          </div>
+                                                          <div class="row text-center mx-0">
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">1:00PM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">1:30PM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">1:45PM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">2:00PM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">2:30PM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">2:45PM</div></div>
+                                                          </div>
+                                                          <div class="row text-center mx-0">
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">3:00PM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">3:30PM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">4:15PM</div></div>
+                                                            <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1">5:00PM</div></div>
+                                                          </div>
+                                                        </div>
+                                                      </form>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
                                         </div>
                                         <div class="step__footer">
                                             <button type="button" class="step__button step__button--back" data-to_step="1" data-step="2">Regresar</button>
@@ -257,7 +308,7 @@
                 </script>
 
                 <script type="text/javascript" src="{{ asset('js/turnos.js') }}"> </script>
-                
+                <script type="text/javascript" src="{{ asset('js/calendar.js') }}"> </script>
             
           
 
