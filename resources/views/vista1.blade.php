@@ -23,7 +23,7 @@
 				<div id="header">
 
 					<!-- Logo -->
-						<h1><a href="" id="logo">Arcana <em>by HTML5 UP</em></a></h1>
+						<h1><a href="" id="logo">Arcanaaa <em>by HTML5 UP</em></a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
