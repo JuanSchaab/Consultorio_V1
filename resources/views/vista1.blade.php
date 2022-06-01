@@ -1,245 +1,221 @@
-<!DOCTYPE HTML>
-<!--
-	Arcana by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script  src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ asset('css/home.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/login.css')}}">
 
-<html>
-	<head>
-        <link href="{{ asset('css/main.css')}}" rel="stylesheet" >
-      
+    <title>Document</title>
+</head>
+<body>
+    <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top ">
+        <div class="container-fluid ">
+           <div class="row">
+               <img class="col pe-1"src="logoo.png" width="65" height="65" > </img>
+                
+               <a class="navbar-brand col ps-0 " href="#"> <p class="" style="font-size: 55% ">C.E.V.R.A <br> Centro Especializado <br> en Vías Respiratorias y Alergias.</p>  </a>  
+               
+                </div>
+          <button class="navbar-toggler text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse row " id="navbarNavAltMarkup">
+                <div class="navbar-nav text-center col-lg-11 justify-content-center  "id="navbarNavAltMarkup">
+                    <a class="nav-link" href="#quienessomos">Quienes somos</a>
+                    <a class="nav-link" href="#tratamientos">Tratamientos</a>
+                    <a class="nav-link" href="#ubicacion">Ubicación</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                    <a class="nav-link" href="#consulta">Consulta</a>
+                </div>
 
-
-		<title>Vista 1</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, " />
-		
-	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
-
-			<!-- Header -->
-				<div id="header">
-
-					<!-- Logo -->
-						<h1><a href="" id="logo">Arcanaaa <em>by HTML5 UP</em></a></h1>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
-								<li>
-									<a href="#">Dropdown</a>
-									<ul>
-										<li><a href="#">Lorem dolor</a></li>
-										<li><a href="#">Magna phasellus</a></li>
-										<li><a href="#">Etiam sed tempus</a></li>
-										<li>
-											<a href="#">Submenu</a>
-											<ul>
-												<li><a href="#">Lorem dolor</a></li>
-												<li><a href="#">Phasellus magna</a></li>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam nisl</a></li>
-												<li><a href="#">Veroeros feugiat</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Veroeros feugiat</a></li>
-									</ul>
-								</li>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="two-sidebar.html">Two Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
-							</ul>
-						</nav>
-
-				</div>
-
-			<!-- Banner -->
-				<section id="banner">
-					<header>
-						<h2>Arcana: <em>A responsive site template freebie by <a href="http://html5up.net">HTML5 UP</a></em></h2>
-						<a href="#" class="button">Learn More</a>
-					</header>
-				</section>
-
-			<!-- Highlights -->
-				<section class="wrapper style1">
-					<div class="container">
-						<div class="row gtr-200">
-							<section class="col-4 col-12-narrower">
-								<div class="box highlight">
-									<i class="icon solid major fa-paper-plane"></i>
-									<h3>This Is Important</h3>
-									<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-								</div>
-							</section>
-							<section class="col-4 col-12-narrower">
-								<div class="box highlight">
-									<i class="icon solid major fa-pencil-alt"></i>
-									<h3>Also Important</h3>
-									<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-								</div>
-							</section>
-							<section class="col-4 col-12-narrower">
-								<div class="box highlight">
-									<i class="icon solid major fa-wrench"></i>
-									<h3>Probably Important</h3>
-									<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-								</div>
-							</section>
-						</div>
-					</div>
-				</section>
-
-			<!-- Gigantic Heading -->
-				<section class="wrapper style2">
-					<div class="container">
-						<header class="major">
-							<h2>A gigantic heading you can use for whatever</h2>
-							<p>With a much smaller subtitle hanging out just below it</p>
-						</header>
-					</div>
-				</section>
-
-			<!-- Posts -->
-				<section class="wrapper style1">
-					<div class="container">
-						<div class="row">
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic01.jpg" alt="" /></a>
-									<div class="inner">
-										<h3>The First Thing</h3>
-										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-									</div>
-								</div>
-							</section>
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic02.jpg" alt="" /></a>
-									<div class="inner">
-										<h3>The Second Thing</h3>
-										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-									</div>
-								</div>
-							</section>
-						</div>
-						<div class="row">
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic03.jpg" alt="" /></a>
-									<div class="inner">
-										<h3>The Third Thing</h3>
-										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-									</div>
-								</div>
-							</section>
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic04.jpg" alt="" /></a>
-									<div class="inner">
-										<h3>The Fourth Thing</h3>
-										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-									</div>
-								</div>
-							</section>
-						</div>
-					</div>
-				</section>
-
-			<!-- CTA -->
-				<section id="cta" class="wrapper style3">
-					<div class="container">
-						<header>
-							<h2>Are you ready to continue your quest?</h2>
-							<a href="#" class="button">Insert Coin</a>
-						</header>
-					</div>
-				</section>
-
-			<!-- Footer -->
-				<div id="footer">
-					<div class="container">
-						<div class="row">
-							<section class="col-3 col-6-narrower col-12-mobilep">
-								<h3>Links to Stuff</h3>
-								<ul class="links">
-									<li><a href="#">Mattis et quis rutrum</a></li>
-									<li><a href="#">Suspendisse amet varius</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum accumsan dolor</a></li>
-									<li><a href="#">Mattis rutrum accumsan</a></li>
-									<li><a href="#">Suspendisse varius nibh</a></li>
-									<li><a href="#">Sed et dapibus mattis</a></li>
-								</ul>
-							</section>
-							<section class="col-3 col-6-narrower col-12-mobilep">
-								<h3>More Links to Stuff</h3>
-								<ul class="links">
-									<li><a href="#">Duis neque nisi dapibus</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum accumsan sed</a></li>
-									<li><a href="#">Mattis et sed accumsan</a></li>
-									<li><a href="#">Duis neque nisi sed</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum amet varius</a></li>
-								</ul>
-							</section>
-							<section class="col-6 col-12-narrower">
-								<h3>Get In Touch</h3>
-								<form>
-									<div class="row gtr-50">
-										<div class="col-6 col-12-mobilep">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="col-6 col-12-mobilep">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="col-12">
-											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
-										</div>
-										<div class="col-12">
-											<ul class="actions">
-												<li><input type="submit" class="button alt" value="Send Message" /></li>
-											</ul>
-										</div>
-									</div>
-								</form>
-							</section>
-						</div>
-					</div>
-
-					<!-- Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
-						</ul>
-
-					<!-- Copyright -->
-						<div class="copyright">
-							<ul class="menu">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-
-				</div>
-
-		</div>
-
-		<!-- Scripts -->
+                <div class=" collapse navbar-collapse text-center col-1 justify-content-center"  id="navbarNavAltMarkup">
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
             
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                    <div id="id01" class="modal">
+                        
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                                </div>
+                        
+                                <div class="container">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+                            
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                    
+                                    <button type="submit">Login</button>
+                                    <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                </div>
+                        
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </nav>
+    
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="portada.jpg" class="d-block w-100" alt="...">
+          </div>
+         </div>
+      </div>
 
-	</body>
+      <div class="fondo1"> </div>
+      
+      <br><br><br>
+
+      
+      <div class=" qs "id="quienessomos" > <br><br>
+        <p class="text-center fs-1">Quienes somos</p><br>
+           <p class="text-center fs-1 text-break"><h5 class="text-center fs-3 text-break"> ¡Hola!, somos los doctores Calí y creamos CEVRA - <br> Centro especializado en vías respiratorias y alergias para ofrecer soluciones en problemas respiratorios.</h5> </p>
+         
+
+            <div class="contenedor d-flex justify-content-evenly row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
+              
+              <div class="card-container col p-2">
+                    <div class="header headerr">
+                      <a href="#">
+                        <img src="nico-modified.png" alt="">
+                      </a>
+                      <h2>Dr. Nicolas Calí</h2>
+                      <h4>Alergista e inmunologo</h4>
+                    </div>
+                    <div class="descripcion">
+                      <p class="card-text">Médico egresado en la Universidad Nacional de Córdoba en el año 2006. Especialista en Alergia e Inmunología en Niños y Adultos desde el año 2011, 
+                        habiendo realizado concurrencia en el Servicio y Catedra N° 1 de Alergia e Inmunología Hospital Nacional de Clínicas de Córdoba. <br> Pasante del Servicio Dermatología Hospital Pediátrico del Niño Jesús de Córdoba, 
+                        Servicio de Inmunología Hospital Pediatrico Prof. Dr. Juan P. Garrahan de Buenos Aires y Servicio de Neumónologia Pediátrica en el Hospital Santísima Trinidad de Córdoba.</p>
+                      
+                    </div>
+                 </div>
+            
+            
+
+                    <div class="card-container col p-2">
+                          <div class="header headerr">
+                            <a href="#">
+                              <img src="sebastian-modified.png" alt="">
+                            </a>
+                            <h2>Dr. Sebastian Calí</h2>
+                            <h4>Neumonologo</h4>
+                          </div>
+                              <div class="descripcion">
+                                <p>
+                                  Médico egresado de la Universidad Nacional de Córdoba en el año 2002. <br>
+                                    Especialista en Neumonología desde el año 2006, habiendo realizado Residencia en Neumonología del Hospital Tránsito Cáceres de Allende, Córdoba y la Carrera de postgrado en Neumonología, de la Universidad Nacional de Córdoba. 
+                                    <br> Posgrado Universitario en Medicina del Sueño, Universidad Austral, Buenos Aires.
+                                </p>
+                              </div>
+                        </div>
+              </div>
+              <br><br>
+        </div>
+      
+      <br>
+      <div id="tratamientos"> <br><br><br><br><h1>Tratamientos</h1></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <br>
+      <br><br><br><br><br>
+      <div id="ubicacion"> <br><br><br><br><h1>Ubicación</h1></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <br>
+      <br><br><br><br><br>
+      <div id="contacto"> <br><br><br><br><h1>Contacto</h1></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <br>
+      <br><br><br><br><br>
+      <div id="consulta"> <br><br><br><br><h1>Consulta</h1></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
+
+      <script src="inicio.js"></script>
+</body>
 </html>
