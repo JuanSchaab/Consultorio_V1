@@ -216,6 +216,6 @@
 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
 
-      <script src="{{ asset('js/inicio.js') }}" ></script>
+      <script src="{{ asset('js/home.js') }}" ></script>
 </body>
 </html>
