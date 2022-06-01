@@ -19,7 +19,7 @@
     <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top ">
         <div class="container-fluid ">
            <div class="row">
-               <img class="col pe-1"src="logoo.png" width="65" height="65" > </img>
+               <img class="col pe-1"src="{{ asset('images/logo.png') }}" width="65" height="65" > </img>
                 
                <a class="navbar-brand col ps-0 " href="#"> <p class="" style="font-size: 55% ">C.E.V.R.A <br> Centro Especializado <br> en Vías Respiratorias y Alergias.</p>  </a>  
                
@@ -74,7 +74,7 @@
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="portada.jpg" class="d-block w-100" alt="...">
+            <img src="{{ asset('images/portada.png') }}" class="d-block w-100" alt="...">
           </div>
          </div>
       </div>
@@ -94,7 +94,7 @@
               <div class="card-container col p-2">
                     <div class="header headerr">
                       <a href="#">
-                        <img src="nico-modified.png" alt="">
+                        <img src="{{ asset('images/nico-modified.png') }}" alt="">
                       </a>
                       <h2>Dr. Nicolas Calí</h2>
                       <h4>Alergista e inmunologo</h4>
@@ -112,7 +112,7 @@
                     <div class="card-container col p-2">
                           <div class="header headerr">
                             <a href="#">
-                              <img src="sebastian-modified.png" alt="">
+                              <img src="{{ asset('images/sebastian-modified.png') }}" alt="">
                             </a>
                             <h2>Dr. Sebastian Calí</h2>
                             <h4>Neumonologo</h4>
@@ -216,6 +216,6 @@
 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsa consectetur quia enim voluptatum perferendis aliquid alias error aliquam laboriosam quod laudantium eligendi eum dignissimos officiis doloribus. Dignissimos, vitae totam.</p>
 
-      <script src="inicio.js"></script>
+      <script src="{{ asset('js/inicio.js') }}" ></script>
 </body>
 </html>

@@ -1,0 +1,76 @@
+body
+{
+    background-image: url("images/crossword.png");
+    font-family: 'Open Sans', sans-serif;
+}
+.fondo1
+{
+    background-color: rgba(43, 125, 184, 0.945);
+    color: rgb(238, 116, 116);
+}
+
+.qs
+{
+    background-color: rgb(250, 249, 248);
+}
+.card-container
+    {
+        display: block;
+        width: 450px;
+        height: 700px;
+        background: rgba(255, 255, 255, 0.585);
+        border-radius: 6px;
+        box-shadow: 1px 1px 4px 2px rgba(0,0,0,.2);
+    }
+
+    .headerr
+    {
+        padding:20px 20px 5px 20px;
+        border:none;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .descripcion
+    {
+        padding: 5px 20px 20px 20px;
+        background: transparent;
+        position: relative;
+        text-align: left;
+        padding-top:0px;
+    }
+    .headerr h4
+    {
+        margin: 0;
+    }
+    .headerr a
+{
+    position: relative;
+    display: block;
+}
+.header img{
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    box-shadow: 0 0 0 8px rgba(0,0, 0,.06);
+    margin: 20px 30px;
+    transition: .2s;
+}
+.headerr a:hover img
+{
+    
+    box-shadow: 0 0 0 12px rgba(0,0,0,.1);
+}
+.headerr  h2
+{
+    color:rgb(43, 125, 184);
+}
+.headerr h4
+{
+    margin-bottom: 20px;
+}
+.descripcion p 
+{
+    margin: 20px 30px;
+}
