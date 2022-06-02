@@ -24,7 +24,7 @@
 
 
 
-    <title>Document</title>
+    <title>CliniCloud</title>
 </head>
 <body>
     <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top ">
@@ -203,7 +203,7 @@
       </div>
       <div>
         <body>
-          <h1>Contacto por WhatsApp</h1>
+         
           <!--Div donde estará el botón de WhatsApp-->
           <div id="BotonWA">
           </div>
@@ -223,9 +223,10 @@
   //backgroundColor: '#00000', // Color de fondo del botón
   position: "right", // Posición del icono
   avatar: 'https://www.w3schools.com/howto/img_avatar.png', // URL imagen avatar
-  avatarName: 'CE.V.R.A', // Nombre del avatar
+  avatarName: 'C.E.V.R.A', // Nombre del avatar
   avatarRole: 'Secretaria', // Rol del avatar
  // autoOpenTimeout: 3000,
+  
   zIndex: '99999',
   });
   });
