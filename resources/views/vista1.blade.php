@@ -13,6 +13,16 @@
     <link rel="stylesheet" href="{{ asset('css/home.css')}}">
     <link rel="stylesheet" href="{{ asset('css/login.css')}}">
     <link rel="stylesheet" href="{{ asset('css/consulta.css')}}">
+<!--Jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<!-- Enlazar CSS Floating WhatsApp -->
+<link rel="stylesheet" href="https://rawcdn.githack.com/jerfeson/floating-whatsapp/0310b4cd88e9e55dc637d1466670da26b645ae49/floating-wpp.min.css">
+
+<!-- Enlazar JS Floating WhatsApp -->
+<script type="text/javascript" src="https://rawcdn.githack.com/jerfeson/floating-whatsapp/0310b4cd88e9e55dc637d1466670da26b645ae49/floating-wpp.min.js"></script>
+
+
 
     <title>Document</title>
 </head>
@@ -191,7 +201,35 @@
           </div>
         </div>
       </div>
-       
+      <div>
+        <body>
+          <h1>Contacto por WhatsApp</h1>
+          <!--Div donde estará el botón de WhatsApp-->
+          <div id="BotonWA">
+          </div>
+      </div>
+     <!-- Inicializar librería Floating WhatsApp  -->
+<script>
+  jQuery(document).ready(function($){
+  $('#BotonWA').floatingWhatsApp({
+  phone: '3434571754', // Número WhatsApp Business
+  popupMessage: 'Hola 👋 ¿Cómo podemos ayudarte?', // Mensaje pop up
+  message: "Hola Juan Carlos", // Mensaje por defecto
+  showPopup: true, // Habilita el pop up
+  headerTitle: 'WhatsApp Chat', // Título del header
+  headerColor: '#25D366', // Color del header
+  buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', // Icono WhatsApp
+  size: '72px', // Tamaño del icono
+  //backgroundColor: '#00000', // Color de fondo del botón
+  position: "right", // Posición del icono
+  avatar: 'https://www.w3schools.com/howto/img_avatar.png', // URL imagen avatar
+  avatarName: 'CE.V.R.A', // Nombre del avatar
+  avatarRole: 'Secretaria', // Rol del avatar
+ // autoOpenTimeout: 3000,
+  zIndex: '99999',
+  });
+  });
+  </script> 
 
   
       <br>
