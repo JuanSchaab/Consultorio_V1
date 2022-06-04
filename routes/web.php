@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LoadMedico;
+use App\Http\Controllers\LoadTurnos;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -33,8 +34,8 @@ Route::get('/login', function () {
 
 Route::get('/vista3',[LoadMedico::class, 'load'] );
 
-Route::get('/nuevavista', function () {
-    return view('nuevavista');
-});
+Route::get('/turnos',[LoadTurnos::class, 'selectHorarios']);
+
+
 
 
